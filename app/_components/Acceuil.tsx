@@ -5,7 +5,7 @@ export const Acceuil = () => {
   return (
     <Section className="flex max-lg:flex-col items-start">
       <div className="flex-[2]">
-        <h2>Luc Rousseau test</h2>
+        <h2>Luc Rousseau</h2>
         <h3>Student Web Developer</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
