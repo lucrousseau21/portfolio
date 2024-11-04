@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
-// import { LucideIcon } from "lucide-react";
-import { Code, Home, Link, LucideIcon, MessageCircle, Rss, StickyNote } from "lucide-react";
+import { Code, Home, LucideIcon, MessageCircle, Rss, StickyNote } from "lucide-react";
+import Link from 'next/link'
+// import { url } from "inspector";
 
 export const Status = () => {
   return (
@@ -41,23 +42,28 @@ const SIDE_PROJECTS = [
     Logo: Code,
     title: "Portfolio",
     description: "The website you're currently on.",
+    url: "/",
   },
   {
     Logo: StickyNote,
     title: "powernode",
     description: "The website you're currently on.",
+    url: "/",
   },
   {
     Logo: Rss,
     title: "Powerpost",
     description: "The website you're currently on.",
+    url: "/",
   },
   {
     Logo: MessageCircle,
     title: "ProjetIUT",
     description: "The website you're currently on.",
+    url: "/",
   },
 ]
+
 
 type SideProjectsProps = {
     Logo: LucideIcon;
