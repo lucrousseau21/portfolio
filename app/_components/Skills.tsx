@@ -12,7 +12,7 @@ export const Skills = () => {
       <Card className="p-4 rounded-3xl">
         <div className="ps-4 pb-4">
           <Badge variant={"outline"}>Skills</Badge>
-          <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
+          <h2 className="pb-2 text-xl font-semibold first:mt-0">
             J'adore travailler sur...
           </h2>
         </div>
