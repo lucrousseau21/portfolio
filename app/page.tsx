@@ -18,11 +18,11 @@ export default function Home() {
 
       <Spacing size="md" />
 
-      <Status />
+      <Skills />
 
       <Spacing size="md" />
 
-      <Skills />
+      <Status />
 
       <Spacing size="md" />
 

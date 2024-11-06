@@ -23,7 +23,7 @@ export const Acceuil = () => {
     <Section className="flex max-lg:flex-col items-start gap-4">
       <div className="flex-[2] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Luc Rousseau</h2>
-        <h3 className="text-3xl font-caption">Student Web Developer</h3>
+        <h3 className="text-3xl font-caption">Étudiant Web Développeur</h3>
         {/* <p>
           J'aspire à être developpeur web. <br />
           Actuellement étudiant à l'<Code className="inline-flex items-center gap-1"><LogoIUTIcon size={16} className="inline"/>IUT de Lens</Code> en Métiers du Multimédia et Internet parcour Web et à la recherche d'une alternance. 
@@ -47,7 +47,7 @@ export const Acceuil = () => {
           alt="image luc rousseau"
           width={500}
           height={300}
-          className="w-full h-auto max-w-xs"
+          className="w-full h-auto max-w-xs rounded-3xl"
         />
       </div>
     </Section>

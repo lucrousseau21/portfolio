@@ -14,7 +14,7 @@ export const ContactCard = (props: {
 }) => {
   return (
     <Link href={props.url ? props.url : ""} target="blank" className={cn("w-full", props.className)}>
-      <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
+      <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4 rounded-2xl">
         <div className="relative">
           <img
             src={props.image}

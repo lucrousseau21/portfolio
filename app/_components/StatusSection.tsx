@@ -43,7 +43,7 @@ export const Status = () => {
             ))}
           </div>
         </Card>
-        <Card className="p-4 flex-1">
+        {/* <Card className="p-4 flex-1 rounded-3xl">
           <p className="text-lg text-muted-foreground">Contact me</p>
           <ContactCard
             name="@luc-rousseau"
@@ -51,7 +51,7 @@ export const Status = () => {
             mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
             description="Linkedin"
           />
-        </Card>
+        </Card> */}
       </div>
       {/* probleme d'aligmenent -> voir vidéo partie avant 48:37*/}
       {/* <div className="flex-[3]">
