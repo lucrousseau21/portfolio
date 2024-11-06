@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Header } from './_components/Header';
 import { Acceuil } from "./_components/Acceuil";
-import { Spacing } from "./_components/Spacing";
+import { Spacing } from "./_components/modules/Spacing";
 import { Status } from "./_components/StatusSection";
 import { Skills } from "./_components/Skills";
 import { Contact } from "./_components/Contact";

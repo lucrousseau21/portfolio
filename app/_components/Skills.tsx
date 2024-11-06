@@ -40,7 +40,7 @@ export const Skills = () => {
                 </h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                J'ai réalisé plusieurs projet avec ce framework <Code>PHP</Code>{" "}
+                J'ai réalisé plusieurs projets avec ce framework <Code>PHP</Code>{" "}
                 lors de ma formation, dont la manipulation d'<Code>API</Code>
               </p>
             </div>
