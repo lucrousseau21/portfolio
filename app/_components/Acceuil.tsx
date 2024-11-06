@@ -1,9 +1,9 @@
 import { ComponentPropsWithoutRef } from "react";
-import { Section } from "./Section";
+import { Section } from "./modules/Section";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { LogoIUTIcon } from "./icons/LogoIUTIcon";
-import { Code } from "./Code";
+import { Code } from "./modules/Code";
 
 
 // const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {

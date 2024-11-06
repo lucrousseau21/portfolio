@@ -1,6 +1,6 @@
 import { Button, buttonVariants } from "@/components/ui/button"
 import { GithubIcon } from "./icons/GithubIcon"
-import { Section } from "./Section"
+import { Section } from "./modules/Section"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { LinkedinIcon } from "./icons/LinkedinIcon"
@@ -10,10 +10,11 @@ export const Header = () => {
     return (
         <header className="sticky top-0 py-4 backdrop-blur-xl bg-background/60 ">
             <Section className="flex items-baseline">
-                <h1 className="text-lg font-bold text-primary">
-                    luc-rousseau.com
+                {/* <h1 className="text-lg font-bold text-primary"> */}
+                <h1 className="font-fredoka font-light tracking-tight text-xl">
+                    <b className="font-medium">luc</b>rousseau
                 </h1>
-                <LucRousseauLogo size={250} />
+                {/* <LucRousseauLogo size={250} /> */}
                 <div className="flex-1"/>
                 <ul className="flex items-center gap-2">
                     <Link

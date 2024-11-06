@@ -6,10 +6,17 @@ import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 // import { Poppins } from "next/font/google";
 import { Anek_Telugu } from "next/font/google";
+import { Fredoka } from "next/font/google"
 
-const AnekTelugu = Anek_Telugu({ subsets: ["latin"],
+const AnekTelugu = Anek_Telugu({
+  subsets: ["latin"],
   variable: "--font-caption",
- });
+});
+
+const fredoka = Fredoka({
+  subsets: ["latin"],
+  variable: "--font-fredoka",
+});
 
 // const poppins = Poppins({ subsets = ["latin"] });
 
@@ -25,7 +32,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Luc Rousseau - Web Developer",
+  title: "Luc Rousseau - Portfolio",
   description: "Portfolio of Luc Rousseau, a web developer based in France.",
 };
 
@@ -35,13 +42,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="fr" className="h-full">
       <body
         className={cn(
-          GeistSans.variable, 
-          AnekTelugu.variable, 
+          GeistSans.variable,
+          AnekTelugu.variable,
           GeistMono.variable,
-          "font-sans h-full bg-background text-foreground")}
+          fredoka.variable,
+          "font-sans h-full bg-background text-foreground"
+        )}
       >
         {children}
       </body>

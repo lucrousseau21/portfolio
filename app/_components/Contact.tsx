@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import { Section } from "./Section";
+import { Section } from "./modules/Section";
 import { ReactLogo } from "./icons/ReactLogo";
-import { Code } from "./Code";
+import { Code } from "./modules/Code";
 import { TailwindLogo } from "./icons/TailwindLogo";
 import { LaravelLogo } from "./icons/LaravelLogo";
-import { ContactCard } from "./ContactCard";
+import { ContactCard } from "./modules/ContactCard";
 import { url } from "inspector";
 
 export const Contact = () => {

@@ -81,6 +81,7 @@ body {
   --destructive-foreground: 0 0% 100%;
   --ring: 210 13% 21%;
   --radius: 0.5rem;
+  --font-fredoka: 'Fredoka', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -105,6 +106,7 @@ body {
     --destructive-foreground: 0 0% 100%;
     --ring: 214 13% 90%;
     --radius: 0.5rem;
+    --font-fredoka: 'Fredoka', sans-serif;
   }
 }
 
@@ -114,5 +116,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-fredoka);
   }
 }

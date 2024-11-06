@@ -13,6 +13,7 @@ const config: Config = {
 			sans: ['var(--font-geist-sans)'],
 			mono: ['var(--font-geist-mono)'],
 			caption: ['var(--font-caption)'],
+			fredoka: ['var(--font-fredoka)']
 		  },
   		colors: {
   			background: 'hsl(var(--background))',

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Section } from "./Section";
+import { Section } from "./modules/Section";
 import {
   ArrowUpRight,
   Code,
@@ -11,25 +11,27 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { SideProject, SideProjectsProps } from "./SideProject";
-import { ContactCard } from "./ContactCard";
+import { SideProject, SideProjectsProps } from "./modules/SideProject";
+import { ContactCard } from "./modules/ContactCard";
 import { Work, WorkProps } from "./Work";
 
 export const Status = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
-      <Card className="flex-[2] w-full p-4 flex flex-col gap-2">
-        <p className="text-lg text-muted-foreground">Side, fun projects.</p>
-        <div className="flex flex-col gap-4">
-          {SIDE_PROJECTS.map((project, index) => (
-            <SideProject
-              key={index}
-              Logo={project.Logo}
-              title={project.title}
-              description={project.description}
-              url="/"
-            />
-          ))}
+      <Card className="flex-[2] w-full flex flex-col gap-2">
+        <div className="p-4">
+          <p className="text-lg text-muted-foreground">Side, fun projects.</p>
+          <div className="flex flex-col gap-4">
+            {SIDE_PROJECTS.map((project, index) => (
+              <SideProject
+                key={index}
+                Logo={project.Logo}
+                title={project.title}
+                description={project.description}
+                url="/"
+              />
+            ))}
+          </div>
         </div>
       </Card>
       <div className="flex-1 w-full flex flex-col h-full gap-4">
