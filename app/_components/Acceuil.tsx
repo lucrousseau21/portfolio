@@ -20,7 +20,7 @@ import { Code } from "./Code";
 
 export const Acceuil = () => {
   return (
-    <Section className="flex max-lg:flex-col items-start">
+    <Section className="flex max-lg:flex-col items-start gap-4">
       <div className="flex-[2] w-full flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Luc Rousseau</h2>
         <h3 className="text-3xl font-caption">Student Web Developer</h3>
