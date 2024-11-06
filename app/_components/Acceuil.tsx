@@ -3,18 +3,20 @@ import { Section } from "./Section";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { LogoIUTIcon } from "./icons/LogoIUTIcon";
+import { Code } from "./Code";
 
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
-  return (
-    <span
-      className={cn(
-        "bg-accent/30 font-mono border border-accent p-1 text-primary rounded-sm",
-        className
-      )}
-      {...props}
-    />
-  );
-};
+
+// const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
+//   return (
+//     <span
+//       className={cn(
+//         "bg-accent/30 font-mono border border-accent p-1 text-primary rounded-sm",
+//         className
+//       )}
+//       {...props}
+//     />
+//   );
+// };
 
 export const Acceuil = () => {
   return (
