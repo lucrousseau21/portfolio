@@ -22,7 +22,7 @@ export const Contact = () => {
           <ContactCard
             className="flex-1 rounded-2xl"
             name="Luc Rousseau"
-            image="https://avatars.githubusercontent.com/u/147161957?v=4"
+            image="https://media.licdn.com/dms/image/v2/D4E35AQFCFtBSZtILjg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730218902045?e=1731542400&v=beta&t=trQFIZqzkKUzMCNeR98WFwCReE04W_BYpVaS5AQDFRU"
             mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
             description="Linkedin"
             url="https://www.linkedin.com/in/luc-rousseau/"

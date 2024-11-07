@@ -39,29 +39,35 @@ export default function ProjetsPrincipaux() {
         </div>
         <div className="flex h-full w-full overflow-scroll gap-4">
           <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll">
-            <div className="flex flex-col gap-2 flex-1">
-              <div className="flex gap-6 items-center">
-            <ReactLogo size={42} />
-            <h3 className="text-2xl font-semibold tracking-tight">React</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-            Mon framework préféré est <Code>React</Code>. J'utilise aussi
-            <Code>Next.js</Code> en backend comme en frontend.
-              </p>
+            <div className="flex flex-col gap-2 flex-1 justify-center items-center">
+              <h3 className="text-2xl font-semibold tracking-tight text-center">Ici très bientôt, mes différentes réalisations</h3>
+              <Code>COMING SOON</Code>
             </div>
           </Card>
-          <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-0 flex-grow-0 h-full overflow-scroll">
+          {/* <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll">
             <div className="flex flex-col gap-2 flex-1">
               <div className="flex gap-6 items-center">
-            <ReactLogo size={42} />
-            <h3 className="text-2xl font-semibold tracking-tight">React</h3>
+                <ReactLogo size={42} />
+                <h3 className="text-2xl font-semibold tracking-tight">React</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-            Mon framework préféré est <Code>React</Code>. J'utilise aussi
-            <Code>Next.js</Code> en backend comme en frontend.
+                Mon framework préféré est <Code>React</Code>. J'utilise aussi
+                <Code>Next.js</Code> en backend comme en frontend.
               </p>
             </div>
-          </Card>
+          </Card> */}
+          {/* <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-0 flex-grow-0 h-full overflow-scroll">
+            <div className="flex flex-col gap-2 flex-1">
+              <div className="flex gap-6 items-center">
+                <ReactLogo size={42} />
+                <h3 className="text-2xl font-semibold tracking-tight">React</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Mon framework préféré est <Code>React</Code>. J'utilise aussi
+                <Code>Next.js</Code> en backend comme en frontend.
+              </p>
+            </div>
+          </Card> */}
         </div>
       </Card>
     </Section>
