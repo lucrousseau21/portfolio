@@ -1,15 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./modules/Section";
-import { SideProject, SideProjectsProps } from "./modules/SideProject";
-import {
-  ArrowUpRight,
-  Home,
-  LucideIcon,
-  MessageCircle,
-  Rss,
-  StickyNote,
-} from "lucide-react";
-import { ReactLogo } from "./icons/ReactLogo";
+// import { SideProject, SideProjectsProps } from "./modules/SideProject";
+// import {
+//   ArrowUpRight,
+//   Home,
+//   LucideIcon,
+//   MessageCircle,
+//   Rss,
+//   StickyNote,
+// } from "lucide-react";
+// import { ReactLogo } from "./icons/ReactLogo";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "./modules/Code";
 import { LucRousseauLogo } from "./icons/LucRousseauLogo";

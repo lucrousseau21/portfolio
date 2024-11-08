@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 import { Section } from "./modules/Section";
-import { ReactLogo } from "./icons/ReactLogo";
-import { Code } from "./modules/Code";
-import { TailwindLogo } from "./icons/TailwindLogo";
-import { LaravelLogo } from "./icons/LaravelLogo";
+// import { ReactLogo } from "./icons/ReactLogo";
+// import { Code } from "./modules/Code";
+// import { TailwindLogo } from "./icons/TailwindLogo";
+// import { LaravelLogo } from "./icons/LaravelLogo";
 import { ContactCard } from "./modules/ContactCard";
-import { url } from "inspector";
+// import { url } from "inspector";
 import { Card } from "@/components/ui/card";
 
 export const Contact = () => {
@@ -15,7 +15,7 @@ export const Contact = () => {
         <div className="ps-4 pb-4">
           <Badge variant={"outline"}>Contact me </Badge>
           <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
-            J'adorerais travailler avec vous !
+            J&apos;adorerais travailler avec vous !
           </h2>
         </div>
         <div className="flex max-md:flex-col w-full gap-4">

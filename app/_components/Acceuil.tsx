@@ -1,8 +1,8 @@
-import { ComponentPropsWithoutRef } from "react";
+// import { ComponentPropsWithoutRef } from "react";
 import { Section } from "./modules/Section";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
-import { LogoIUTIcon } from "./icons/LogoIUTIcon";
+// import { cn } from "@/lib/utils";
+// import { LogoIUTIcon } from "./icons/LogoIUTIcon";
 import { Code } from "./modules/Code";
 
 
@@ -29,10 +29,10 @@ export const Acceuil = () => {
           Actuellement étudiant à l'<Code className="inline-flex items-center gap-1"><LogoIUTIcon size={16} className="inline"/>IUT de Lens</Code> en Métiers du Multimédia et Internet parcour Web et à la recherche d'une alternance. 
         </p> */}
         <p>
-          J'aspire à être developpeur web. <br />
-          Actuellement étudiant à l'
+          Futur développeur web. <br />
+          Actuellement étudiant en troisième année à l&apos;
           <Code className="inline-flex items-center gap-1">IUT de Lens</Code> en
-          Métiers du Multimédia et Internet parcour Web et à la recherche d'une
+          Métiers du Multimédia et Internet parcours Web et à la recherche d&apos;une
           alternance.
         </p>
       </div>
@@ -43,7 +43,7 @@ export const Acceuil = () => {
           className="w-full h-auto"
         /> */}
         <Image
-          src="/images/IMG_2693-min.jpg"
+          src="/portrait1.jpg"
           alt="image luc rousseau"
           width={500}
           height={300}

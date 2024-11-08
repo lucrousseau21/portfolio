@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Header } from './_components/Header';
 import { Acceuil } from "./_components/Acceuil";
 import { Spacing } from "./_components/modules/Spacing";

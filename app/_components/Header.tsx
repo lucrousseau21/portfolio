@@ -1,10 +1,11 @@
-import { Button, buttonVariants } from "@/components/ui/button"
+// import { Button, buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { GithubIcon } from "./icons/GithubIcon"
 import { Section } from "./modules/Section"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { LinkedinIcon } from "./icons/LinkedinIcon"
-import { LucRousseauLogo } from "./icons/LucRousseauLogo"
+// import { LucRousseauLogo } from "./icons/LucRousseauLogo"
 
 export const Header = () => {
     return (

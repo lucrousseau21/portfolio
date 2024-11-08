@@ -1,18 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./modules/Section";
-import {
-  ArrowUpRight,
-  Code,
-  Home,
-  LucideIcon,
-  MessageCircle,
-  Rss,
-  StickyNote,
-} from "lucide-react";
-import Link from "next/link";
+// import {
+//   ArrowUpRight,
+//   Code,
+//   Home,
+//   LucideIcon,
+//   MessageCircle,
+//   Rss,
+//   StickyNote,
+// } from "lucide-react";
+// import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { SideProject, SideProjectsProps } from "./modules/SideProject";
-import { ContactCard } from "./modules/ContactCard";
+// import { SideProject, SideProjectsProps } from "./modules/SideProject";
+// import { ContactCard } from "./modules/ContactCard";
 import { Work, WorkProps } from "./modules/Work";
 import { Formation, FormationProps } from "./modules/Formation";
 

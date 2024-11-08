@@ -13,7 +13,7 @@ export const Skills = () => {
         <div className="ps-4 pb-4">
           <Badge variant={"outline"}>Skills</Badge>
           <h2 className="pb-2 text-xl font-semibold first:mt-0">
-            J'adore travailler sur...
+            J&apos;adore travailler sur...
           </h2>
         </div>
 
@@ -25,7 +25,7 @@ export const Skills = () => {
                 <h3 className="text-2xl font-semibold tracking-tight">React</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Mon framework préféré est <Code>React</Code>. J'utilise aussi
+                Mon framework préféré est <Code>React</Code>. J&apos;utilise aussi
                 <Code>Next.js</Code> en backend comme en frontend.
               </p>
             </div>
@@ -40,8 +40,8 @@ export const Skills = () => {
                 </h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                J'ai réalisé plusieurs projets avec ce framework <Code>PHP</Code>{" "}
-                lors de ma formation, dont la manipulation d'<Code>API</Code>
+                J&apos;ai réalisé plusieurs projets avec ce framework <Code>PHP</Code>{" "}
+                lors de ma formation, dont la manipulation d&apos;<Code>API</Code>
               </p>
             </div>
           </Card>
@@ -56,7 +56,7 @@ export const Skills = () => {
               </div>
               <p className="text-sm text-muted-foreground">
                 Je peux <i>rapidement</i> créer un <i>magnifique</i> site !
-                J'affectionne également <Code>shadcn/ui</Code> pour les
+                J&apos;affectionne également <Code>shadcn/ui</Code> pour les
                 composans.
               </p>
             </div>
