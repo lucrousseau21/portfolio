@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
-// import { Poppins } from "next/font/google";
 import { Anek_Telugu } from "next/font/google";
 import { Fredoka } from "next/font/google"
 
@@ -34,6 +32,9 @@ const fredoka = Fredoka({
 export const metadata: Metadata = {
   title: "Luc Rousseau - Portfolio",
   description: "Portfolio of Luc Rousseau, a web developer based in France.",
+  icons: {
+    icon: '/favicon.png?v=1',
+  },
 };
 
 export default function RootLayout({
@@ -43,6 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
+      <head>
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+      </head>
       <body
         className={cn(
           GeistSans.variable,
