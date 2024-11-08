@@ -4,7 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 import { Anek_Telugu } from "next/font/google";
-import { Fredoka } from "next/font/google"
+import { Fredoka } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   title: "Luc Rousseau - Portfolio",
   description: "Portfolio of Luc Rousseau, a web developer based in France.",
   icons: {
-    icon: '/favicon.png?v=1',
+    icon: "/favicon.png?v=1",
   },
 };
 
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="h-full">
       <head>
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
         className={cn(
@@ -56,7 +57,7 @@ export default function RootLayout({
           "font-sans h-full bg-background text-foreground"
         )}
       >
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
