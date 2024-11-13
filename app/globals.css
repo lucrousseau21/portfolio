@@ -87,7 +87,7 @@ body {
 
   /* --accent: 0 0% 85%; */
 
-  --accent: 220 14% 90%;
+  --accent: 220 14% 80%;
 
   --accent-foreground: 0 0% 25%;
   --destructive: 9 92% 38%;
@@ -122,6 +122,8 @@ body {
     --ring: 214 13% 90%;
     --radius: 0.5rem;
     --font-fredoka: 'Fredoka', sans-serif;
+
+    --bfonce: 199 34% 33%;
   }
 }
 
