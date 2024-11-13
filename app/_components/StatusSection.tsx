@@ -41,7 +41,7 @@ export const Status = () => {
       </Card> */}
         <div className="flex-1 w-full flex h-full gap-4">
           <Card className="p-4 flex-1 flex flex-col gap-2">
-            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">Fomations</p>
+            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">Formations</p>
             <div className="flex flex-col gap-4">
               {FORMATION.map((formation, index) => (
                 <Formation key={index} {...formation} />
