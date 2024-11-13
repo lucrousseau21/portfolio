@@ -139,7 +139,7 @@ const WORK: WorkProps[] = [
     image:
       "https://media.licdn.com/dms/image/v2/C4D0BAQEJIrLeIu3hgg/company-logo_100_100/company-logo_100_100/0/1630551662594/cefim_logo?e=1738800000&v=beta&t=jGINOeYihgVKMKIZIipBeIW2s9QiH6qzMuSCCqqD0jI",
     title: "CEFIM Tours",
-    role: "Stage de seconde - découvertes des différents métiers de l'informatique",
+    role: "Stage de seconde - découverte des différents métiers de l'informatique",
     date: "2018",
     url: "https://www.cefim.eu",
     stage: true,
