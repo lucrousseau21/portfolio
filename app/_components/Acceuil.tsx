@@ -43,7 +43,7 @@ export const Acceuil = () => {
           className="w-full h-auto"
         /> */}
         <Image
-          src="images/portrait1.jpg"
+          src="images/portrait2.jpg"
           alt="image luc rousseau"
           width={500}
           height={300}
