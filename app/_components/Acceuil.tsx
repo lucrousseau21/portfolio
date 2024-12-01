@@ -20,8 +20,8 @@ import { Code } from "./modules/Code";
 
 export const Acceuil = () => {
   return (
-    <Section className="flex max-lg:flex-col items-start gap-4">
-      <div className="flex-[2] w-full flex flex-col gap-2">
+    <Section className="flex max-lg:flex-col items-start gap-32">
+      <div className="flex-[2] flex flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Luc Rousseau</h2>
         <h3 className="text-3xl font-caption">Étudiant Web Développeur</h3>
         {/* <p>
@@ -36,7 +36,7 @@ export const Acceuil = () => {
           alternance.
         </p>
       </div>
-      <div className="flex-1">
+      <div className="flex-[1]">
         {/* <img
           src="http://luc-rousseau.com/media/portrait1.png"
           alt="image luc rousseau"
