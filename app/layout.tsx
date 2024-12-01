@@ -57,7 +57,8 @@ export default function RootLayout({
           "font-sans h-full bg-background text-foreground"
         )}
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        {/* <SmoothScroll>{children}</SmoothScroll> */}
+        {children}
       </body>
     </html>
   );

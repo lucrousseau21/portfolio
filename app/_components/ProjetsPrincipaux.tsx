@@ -16,8 +16,8 @@ import { LucRousseauLogo } from "./icons/LucRousseauLogo";
 
 export default function ProjetsPrincipaux() {
   return (
-    <Section className="flex w-full items-start gap-4 h-448">
-      <Card className="p-4 rounded-3xl w-full h-full overflow-hidden flex flex-col">
+    <Section className="flex w-full items-start gap-4">
+      <Card className="p-4 rounded-3xl w-full h-full flex flex-col">
         {/* <div className="p-4">
           <p className="text-lg text-muted-foreground">Side, fun projects.</p>
           <div className="flex flex-col gap-4">
@@ -38,19 +38,31 @@ export default function ProjetsPrincipaux() {
             Mes principaux projets
           </h2>
         </div>
-        <div className="flex h-full w-full overflow-scroll gap-4">
-          <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll">
-            <div className="flex flex-col gap-2 flex-1 justify-center items-center">
-              <h3 className="text-2xl font-semibold tracking-tight text-center">Ici très bientôt, mes différentes réalisations</h3>
+        <div className="flex flex-col h-full w-full gap-4">
+          {/* <Card className="p-3 bg-accent/10 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll"> */}
+            
+            <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">
+              {/* <h3 className="text-2xl font-semibold tracking-tight text-center">Ici très bientôt, mes différentes réalisations</h3>
               <div className="flex">
                 <div className="flex justify-center items-center">
                     <Code>COMING SOON</Code>
                 </div>
                 <h3 className="flex justify-center items-center ps-8">/</h3>
                 <LucRousseauLogo size={200} />
+              </div> */}
+              <div className="w-3/5 h-full">
+                <img
+                  src="/images/IllustrationStageGN.png"
+                  alt="Illustration de mon stage chez Gueules Noires"
+                  className="object-fill h-full rounded-2xl"
+                />
               </div>
-            </div>
-          </Card>
+                <Card className="p-3 w-2/5  h-full bg-accent/10 hover:bg-accent/30 transition-colors gap-4 flex-1 rounded-2xl">
+                  <h1>Stage chez Gueules Noires</h1>
+                  <p className="text-sm text-muted-foreground">Lors de ce stage, j'ai pu réaliser la communication et le site <Code>Wordpress</Code> de la distillerie</p>
+                </Card>
+            {/* </div> */}
+          {/* </Card> */}
           {/* <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll">
             <div className="flex flex-col gap-2 flex-1">
               <div className="flex gap-6 items-center">
@@ -76,6 +88,34 @@ export default function ProjetsPrincipaux() {
             </div>
           </Card> */}
         </div>
+        
+
+
+
+
+
+
+
+
+
+            <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">
+              <div className="w-3/5 h-full">
+                <img
+                  src="/images/IllustrationStageGN.png"
+                  alt="Illustration de mon stage chez Gueules Noires"
+                  className="object-fill h-full rounded-2xl"
+                />
+              </div>
+                <Card className="p-3 w-2/5  h-full bg-accent/10 hover:bg-accent/30 transition-colors gap-4 flex-1 rounded-2xl">
+                  <h1>Stage chez Gueules Noires</h1>
+                  <p className="text-sm text-muted-foreground">Lors de ce stage, j'ai pu réaliser la communication et le site <Code>Wordpress</Code> de la distillerie</p>
+                </Card>
+            </div>
+
+
+
+
+            </div>
       </Card>
     </Section>
   );
