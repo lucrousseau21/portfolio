@@ -12,7 +12,8 @@ import { Section } from "./modules/Section";
 // import { ReactLogo } from "./icons/ReactLogo";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "./modules/Code";
-import { LucRousseauLogo } from "./icons/LucRousseauLogo";
+// import Image from "next/image";
+// import { LucRousseauLogo } from "./icons/LucRousseauLogo";
 
 export default function ProjetsPrincipaux() {
   return (
@@ -44,6 +45,12 @@ export default function ProjetsPrincipaux() {
           <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">
             {/* projet1 */}
             <Card className="w-3/5 h-full p-2">
+              {/* <Image
+                src="/images/IllustrationStageGN.png"
+                alt="Illustration de mon stage chez Gueules Noires"
+                className="object-fill h-full rounded-2xl"
+                // layout="fill"
+              /> */}
               <img
                 src="/images/IllustrationStageGN.png"
                 alt="Illustration de mon stage chez Gueules Noires"
@@ -55,13 +62,19 @@ export default function ProjetsPrincipaux() {
                 Stage chez Gueules Noires
               </h1>
               <p className="text-sm text-muted-foreground">
-                Lors de ce stage, j'ai pu réaliser la communication et le site <Code>Wordpress</Code> de la distillerie.
+                Lors de ce stage, j&lsquo;ai pu réaliser la communication et le
+                site <Code>Wordpress</Code> de la distillerie.
               </p>
               <p className="text-sm text-muted-foreground">
-                Un stage très inspirant qui m'a permis de développer pour un projet réel avec des échanges constants avec le commanditaire.
+                Un stage très inspirant qui m&lsquo;a permis de développer pour
+                un projet réel avec des échanges constants avec le
+                commanditaire.
               </p>
               <p className="text-sm text-muted-foreground">
-                J'ai pu expérimenter plusieurs casquettes du développement Wordpress comme la gestion d'une boutique en ligne avec <Code>WooCommerce</Code>, la gestion d'un blog mais aussi la mise en page avec un module de bloc, ici <Code>Divi</Code>.
+                J&lsquo;ai pu expérimenter plusieurs casquettes du développement
+                Wordpress comme la gestion d&lsquo;une boutique en ligne avec{" "}
+                <Code>WooCommerce</Code>, la gestion d&lsquo;un blog mais aussi
+                la mise en page avec un module de bloc, ici <Code>Divi</Code>.
               </p>
             </Card>
             {/* </div> */}
@@ -111,6 +124,12 @@ export default function ProjetsPrincipaux() {
               </p>
             </Card>
             <Card className="w-3/5 h-full p-2">
+              {/* <Image
+                src="/images/IllustrationProjetIntegration.png"
+                alt="Illustration de mon stage chez Gueules Noires"
+                className="object-fill h-full rounded-2xl"
+                // layout="fill"
+              /> */}
               <img
                 src="/images/IllustrationProjetIntegration.png"
                 alt="Illustration de mon stage chez Gueules Noires"

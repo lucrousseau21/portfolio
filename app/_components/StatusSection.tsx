@@ -113,7 +113,7 @@ const FORMATION: FormationProps[] = [
     title: "IUT de Lens",
     role: "BUT MMI",
     date: "2022 - 2025",
-    url: "https://www.univ-tours.fr/formations/licence-sciences-technologies-sante-mention-informatique-parcours-sciences-informatiques",
+    url: "https://www.iut-lens.univ-artois.fr/formations/but-mmi",
   },
   {
     image:
@@ -121,7 +121,7 @@ const FORMATION: FormationProps[] = [
     title: "Université de Tours",
     role: "Licence Informatique",
     date: "2020 - 2022",
-    url: "https://www.iut-lens.univ-artois.fr/formations/but-mmi/",
+    url: "https://www.univ-tours.fr/formations/licence-sciences-technologies-sante-mention-informatique-parcours-sciences-informatiques",
   },
 ];
 

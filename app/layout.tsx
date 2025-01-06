@@ -5,7 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 import { Anek_Telugu } from "next/font/google";
 import { Fredoka } from "next/font/google";
-import SmoothScroll from "@/components/SmoothScroll";
+// import SmoothScroll from "@/components/SmoothScroll";
 
 const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
@@ -57,8 +57,8 @@ export default function RootLayout({
           "font-sans h-full bg-background text-foreground"
         )}
       >
-        <SmoothScroll>{children}</SmoothScroll>
-        {/* {children} */}
+        {/* <SmoothScroll>{children}</SmoothScroll> */}
+        {children}
       </body>
     </html>
   );
