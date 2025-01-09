@@ -57,7 +57,7 @@ export const Skills = () => {
               <p className="text-sm text-muted-foreground">
                 Je peux <i>rapidement</i> créer un <i>magnifique</i> site !
                 J&apos;affectionne également <Code>shadcn/ui</Code> pour les
-                composans.
+                composants.
               </p>
             </div>
           </Card>
