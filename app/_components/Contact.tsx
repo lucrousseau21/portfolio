@@ -1,11 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Section } from "./modules/Section";
-// import { ReactLogo } from "./icons/ReactLogo";
-// import { Code } from "./modules/Code";
-// import { TailwindLogo } from "./icons/TailwindLogo";
-// import { LaravelLogo } from "./icons/LaravelLogo";
 import { ContactCard } from "./modules/ContactCard";
-// import { url } from "inspector";
 import { Card } from "@/components/ui/card";
 
 export const Contact = () => {
@@ -22,7 +17,7 @@ export const Contact = () => {
           <ContactCard
             className="flex-1 rounded-2xl"
             name="Luc Rousseau"
-            image="https://media.licdn.com/dms/image/v2/D4E35AQFCFtBSZtILjg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730218902045?e=1731542400&v=beta&t=trQFIZqzkKUzMCNeR98WFwCReE04W_BYpVaS5AQDFRU"
+            image="https://media.licdn.com/dms/image/v2/D4E03AQGhng3fGKg_lw/profile-displayphoto-shrink_200_200/B4EZPbT38GHkAY-/0/1734551240861?e=1757548800&v=beta&t=uf8Lk6XLTYvOR5Sc5NtcSa3V29Mmfj-jpIJSQ5yX6BA"
             mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png"
             description="Linkedin"
             url="https://www.linkedin.com/in/luc-rousseau/"

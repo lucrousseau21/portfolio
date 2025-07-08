@@ -41,7 +41,9 @@ export const Status = () => {
       </Card> */}
         <div className="flex-1 w-full flex h-full gap-4">
           <Card className="p-4 flex-1 flex flex-col gap-2">
-            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">Formations</p>
+            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">
+              Formations
+            </p>
             <div className="flex flex-col gap-4">
               {FORMATION.map((formation, index) => (
                 <Formation key={index} {...formation} />
@@ -49,7 +51,9 @@ export const Status = () => {
             </div>
           </Card>
           <Card className="p-4 flex-1 flex flex-col gap-2">
-            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">Expériences</p>
+            <p className="ps-4 pb-2 text-xl font-semibold first:mt-0">
+              Expériences
+            </p>
             <div className="flex flex-col gap-4">
               {WORK.map((work, index) => (
                 <Work key={index} {...work} />
@@ -108,16 +112,14 @@ export const Status = () => {
 
 const FORMATION: FormationProps[] = [
   {
-    image:
-      "https://media.licdn.com/dms/image/v2/C4E0BAQF8kdymOV9tEw/company-logo_100_100/company-logo_100_100/0/1654587431357/iut_de_lens_logo?e=1738800000&v=beta&t=we17e_23bkAOUWNLeFNmsEWtbUy7GzO9hakQ9lTteNA",
+    image: "images/logo_iut_lens.png",
     title: "IUT de Lens",
     role: "BUT MMI",
     date: "2022 - 2025",
     url: "https://www.iut-lens.univ-artois.fr/formations/but-mmi",
   },
   {
-    image:
-      "https://media.licdn.com/dms/image/v2/C4E0BAQEvuszUtf2HXw/company-logo_100_100/company-logo_100_100/0/1631362602210/universit_franois_rabelais_de_tours_logo?e=1738800000&v=beta&t=MGY1ORIt5hg_r9bQMtPpKQ0fBoZi2gzd8cj3y_ynORM",
+    image: "images/logo_universite_tours.png",
     title: "Université de Tours",
     role: "Licence Informatique",
     date: "2020 - 2022",

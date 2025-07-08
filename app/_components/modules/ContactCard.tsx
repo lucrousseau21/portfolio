@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 // import { url } from "inspector";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const ContactCard = (props: {
   image: string;
@@ -13,17 +14,21 @@ export const ContactCard = (props: {
   className?: string;
 }) => {
   return (
-    <Link href={props.url ? props.url : ""} target="blank" className={cn("w-full", props.className)}>
+    <Link href={props.url ?? ""} target="blank" className={cn("w-full", props.className)}>
       <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4 rounded-2xl">
         <div className="relative">
-          <img
+          <Image
             src={props.image}
             alt={props.name}
+            width={40}
+            height={40}
             className="w-10 h-10 rounded-full object-contain"
           />
-          <img
+          <Image
             src={props.mediumImage}
             alt={props.name}
+            width={16}
+            height={16}
             className="w-4 h-4 absolute -bottom-1 -right-1 rounded-full object-contain"
           />
         </div>
