@@ -32,8 +32,7 @@ export const Acceuil = () => {
           Futur développeur web. <br />
           Actuellement étudiant en troisième année à l&apos;
           <Code className="inline-flex items-center gap-1">IUT de Lens</Code> en
-          Métiers du Multimédia et Internet parcours Web et à la recherche d&apos;une
-          alternance.
+          Métiers du Multimédia et Internet parcours Web.
         </p>
       </div>
       <div className="flex-[1]">

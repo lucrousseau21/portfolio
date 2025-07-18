@@ -1,38 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./modules/Section";
-// import { SideProject, SideProjectsProps } from "./modules/SideProject";
-// import {
-//   ArrowUpRight,
-//   Home,
-//   LucideIcon,
-//   MessageCircle,
-//   Rss,
-//   StickyNote,
-// } from "lucide-react";
-// import { ReactLogo } from "./icons/ReactLogo";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "./modules/Code";
-// import Image from "next/image";
-// import { LucRousseauLogo } from "./icons/LucRousseauLogo";
+import Image from "next/image";
 
 export default function ProjetsPrincipaux() {
   return (
     <Section className="flex w-full items-start gap-4">
       <Card className="p-4 rounded-3xl w-full h-full flex flex-col">
-        {/* <div className="p-4">
-          <p className="text-lg text-muted-foreground">Side, fun projects.</p>
-          <div className="flex flex-col gap-4">
-            {SIDE_PROJECTS.map((project, index) => (
-              <SideProject
-                key={index}
-                Logo={project.Logo}
-                title={project.title}
-                description={project.description}
-                url="/"
-              />
-            ))}
-          </div>
-        </div> */}
         <div className="ps-4 pb-4">
           <Badge variant={"outline"}>Main Projects</Badge>
           <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
@@ -40,21 +15,14 @@ export default function ProjetsPrincipaux() {
           </h2>
         </div>
         <div className="flex flex-col h-full w-full gap-4">
-          {/* div qui contient tous les projets */}
-
           <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">
-            {/* projet1 */}
             <Card className="w-3/5 h-full p-2">
-              {/* <Image
+              <Image
                 src="/images/IllustrationStageGN.png"
                 alt="Illustration de mon stage chez Gueules Noires"
-                className="object-fill h-full rounded-2xl"
-                // layout="fill"
-              /> */}
-              <img
-                src="/images/IllustrationStageGN.png"
-                alt="Illustration de mon stage chez Gueules Noires"
-                className="object-fill h-full rounded-2xl"
+                className="object-fill rounded-2xl"
+                width={500}
+                height={300}
               />
             </Card>
             <Card className="p-3 w-2/5  h-full bg-accent/10 hover:bg-accent/30 transition-colors gap-4 flex-1 rounded-2xl">
@@ -77,37 +45,9 @@ export default function ProjetsPrincipaux() {
                 la mise en page avec un module de bloc, ici <Code>Divi</Code>.
               </p>
             </Card>
-            {/* </div> */}
-            {/* </Card> */}
-            {/* <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-full flex-grow h-full overflow-scroll">
-            <div className="flex flex-col gap-2 flex-1">
-              <div className="flex gap-6 items-center">
-                <ReactLogo size={42} />
-                <h3 className="text-2xl font-semibold tracking-tight">React</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Mon framework préféré est <Code>React</Code>. J'utilise aussi
-                <Code>Next.js</Code> en backend comme en frontend.
-              </p>
-            </div>
-          </Card> */}
-            {/* <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex gap-4 flex-1 rounded-2xl w-0 flex-grow-0 h-full overflow-scroll">
-            <div className="flex flex-col gap-2 flex-1">
-              <div className="flex gap-6 items-center">
-                <ReactLogo size={42} />
-                <h3 className="text-2xl font-semibold tracking-tight">React</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Mon framework préféré est <Code>React</Code>. J'utilise aussi
-                <Code>Next.js</Code> en backend comme en frontend.
-              </p>
-            </div>
-          </Card> */}
           </div>
 
           <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">
-            {/* projet2 */}
-
             <Card className="p-3 w-2/5  h-full bg-accent/10 hover:bg-accent/30 transition-colors gap-4 flex-1 rounded-2xl">
               <h1 className="text-xl font-semibold tracking-tight pb-2">
                 Initiation au SCSS et à l’animation dans les site web
@@ -124,16 +64,12 @@ export default function ProjetsPrincipaux() {
               </p>
             </Card>
             <Card className="w-3/5 h-full p-2">
-              {/* <Image
+              <Image
                 src="/images/IllustrationProjetIntegration.png"
                 alt="Illustration de mon stage chez Gueules Noires"
-                className="object-fill h-full rounded-2xl"
-                // layout="fill"
-              /> */}
-              <img
-                src="/images/IllustrationProjetIntegration.png"
-                alt="Illustration de mon stage chez Gueules Noires"
-                className="object-fill h-full rounded-2xl"
+                className="object-fill rounded-2xl"
+                width={500}
+                height={300}
               />
             </Card>
           </div>

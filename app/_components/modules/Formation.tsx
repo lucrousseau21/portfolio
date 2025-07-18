@@ -30,7 +30,7 @@ export const Formation = (props: FormationProps) => {
         </div>
         <p className="text-xs text-muted-foreground">{props.role}</p>
       </div>
-      <p className="text-xs text-end text-muted-foreground">{props.date}</p>
+      <p className="text-xs text-end text-muted-foreground min-w-24">{props.date}</p>
     </Link>
   );
 };

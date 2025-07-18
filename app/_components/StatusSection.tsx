@@ -83,38 +83,11 @@ export const Status = () => {
   );
 };
 
-// const SIDE_PROJECTS: SideProjectsProps[] = [
-//   {
-//     Logo: Code,
-//     title: "Portfolio",
-//     description: "The website you're currently on.",
-//     url: "/",
-//   },
-//   {
-//     Logo: StickyNote,
-//     title: "powernode",
-//     description: "The website you're currently on.",
-//     url: "/",
-//   },
-//   {
-//     Logo: Rss,
-//     title: "Powerpost",
-//     description: "The website you're currently on.",
-//     url: "/",
-//   },
-//   {
-//     Logo: MessageCircle,
-//     title: "ProjetIUT",
-//     description: "The website you're currently on.",
-//     url: "/",
-//   },
-// ];
-
 const FORMATION: FormationProps[] = [
   {
     image: "images/logo_iut_lens.png",
     title: "IUT de Lens",
-    role: "BUT MMI",
+    role: "BUT MMI Parcours Web - Métiers du Multimedia et Internet",
     date: "2022 - 2025",
     url: "https://www.iut-lens.univ-artois.fr/formations/but-mmi",
   },
@@ -129,19 +102,25 @@ const FORMATION: FormationProps[] = [
 
 const WORK: WorkProps[] = [
   {
-    image:
-      "https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/315409352_501316775353541_3042814502722726920_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=4A-qKrCOPswQ7kNvgEiWuDU&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=A6C3vuyAuvwj0OYhlSvDPoG&oh=00_AYATddxRuxS-b3IM78lRGJN4f803fsVDJghk1kCXI7COQA&oe=6731CF9B",
+    image: "images/logo_efficienceit.jpg",
+    title: "Efficience IT",
+    role: "Développeur front-end avec Next.js et Material UI, manipulation d'API construites avec Symfony",
+    date: "2025",
+    url: "https://www.itefficience.com",
+    stage: true,
+  },
+  {
+    image: "images/logo_gueules-noires.jpg",
     title: "Distillerie Gueules Noires",
-    role: "Stagiaire - Communication et réalisation d'un site WordPress",
-    date: "2023",
+    role: "Communication et réalisation d'un site WordPress",
+    date: "2024",
     url: "https://www.facebook.com/distillerie.gueules.noires",
     stage: true,
   },
   {
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQEJIrLeIu3hgg/company-logo_100_100/company-logo_100_100/0/1630551662594/cefim_logo?e=1738800000&v=beta&t=jGINOeYihgVKMKIZIipBeIW2s9QiH6qzMuSCCqqD0jI",
+    image: "images/logo_cefim.png",
     title: "CEFIM Tours",
-    role: "Stage de seconde - découverte des différents métiers de l'informatique",
+    role: "Semaine découverte des différents métiers de l'informatique",
     date: "2018",
     url: "https://www.cefim.eu",
     stage: true,

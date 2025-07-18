@@ -34,7 +34,7 @@ export const Work = (props: WorkProps) => {
         </div>
         <p className="text-xs text-muted-foreground">{props.role}</p>
       </div>
-      <p className="text-xs text-end text-muted-foreground">{props.date}</p>
+      <p className="text-xs text-end text-muted-foreground min-w-[80px] max-w-[100px]">{props.date}</p>
     </Link>
   );
 };
