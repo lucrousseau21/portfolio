@@ -17,7 +17,7 @@ Ce guide explique comment travailler en toute confidentialité sur un dépôt pr
 ## 2. Cloner le dépôt privé
 
 ```bash
-git clone https://github.com/tonpseudo/portfolio-private.git
+git clone https://github.com/lucrousseau21/portfolio-private.git
 cd portfolio-private
 ```
 
@@ -26,10 +26,10 @@ cd portfolio-private
 ## 3. Ajouter le dépôt public comme remote
 
 ```bash
-git remote add public https://github.com/tonpseudo/portfolio-public.git
+git remote add public https://github.com/lucrousseau21/portfolio-public.git
 ```
 
-> Remplace `tonpseudo` par ton nom d’utilisateur GitHub.
+> Remplace `lucrousseau21` par ton nom d’utilisateur GitHub.
 
 ---
 
@@ -93,10 +93,10 @@ Puis, sur GitHub, crée une Pull Request depuis la branche publiée.
 
 ```bash
 # Cloner le dépôt privé
-git clone https://github.com/tonpseudo/portfolio-private.git
+git clone https://github.com/lucrousseau21/portfolio-private.git
 
 # Ajouter le dépôt public comme remote
-git remote add public https://github.com/tonpseudo/portfolio-public.git
+git remote add public https://github.com/lucrousseau21/portfolio-public.git
 
 # Mettre à jour le privé avec le public
 git fetch public
