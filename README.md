@@ -1,109 +1,36 @@
-# portfolio-private
-PRIVATE REPO | lucrousseau21/portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Travailler avec un dépôt privé et publier vers un dépôt public sur GitHub - Copilot
+## Getting Started
 
-Ce guide explique comment travailler en toute confidentialité sur un dépôt privé, puis envoyer tes mises à jour vers un dépôt public. Cela te permet de préparer tes changements hors de la vue du public, puis de les publier quand tu le souhaites.
-
----
-
-## 1. Créer les deux dépôts
-
-- **Dépôt privé** : sur GitHub, crée un dépôt privé (ex: `portfolio-private`).
-- **Dépôt public** : crée aussi le dépôt public (ex: `portfolio-public`).
-
----
-
-## 2. Cloner le dépôt privé
+First, run the development server:
 
 ```bash
-git clone https://github.com/lucrousseau21/portfolio-private.git
-cd portfolio-private
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
----
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 3. Ajouter le dépôt public comme remote
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```bash
-git remote add public https://github.com/lucrousseau21/portfolio-public.git
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-> Remplace `lucrousseau21` par ton nom d’utilisateur GitHub.
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## 4. Travailler sur le dépôt privé
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Crée des branches, fais tes commits, merges, etc.
-- Exemple :
-  ```bash
-  git checkout -b nouvelle-fonctionnalite
-  # ... travaille et commit ...
-  git checkout main
-  git merge nouvelle-fonctionnalite
-  ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 5. Mettre à jour ton dépôt privé avec les changements du dépôt public
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Si tu veux récupérer les dernières modifications du dépôt public dans ton dépôt privé :
-
-```bash
-git fetch public
-git checkout main
-git merge public/main
-```
-
-> Tu peux aussi utiliser la commande :
->
-> ```bash
-> git pull public main
-> ```
-
----
-
-## 6. Publier tes changements du privé vers le public
-
-Quand tu es prêt à partager tes modifications :
-
-- Pour publier la branche principale (`main`) :
-  ```bash
-  git push public main
-  ```
-- Pour publier une branche spécifique (ex: pour une Pull Request) :
-  ```bash
-  git push public nouvelle-fonctionnalite
-  ```
-
-Puis, sur GitHub, crée une Pull Request depuis la branche publiée.
-
----
-
-## Remarques
-
-- **Confidentialité** : Tant que tu ne pousses rien vers le dépôt public, tes changements restent privés.
-- **Synchronisation** : Tu peux régulièrement synchroniser ton dépôt privé avec les mises à jour du dépôt public (voir étape 5).
-- **Organisation** : Cette méthode te permet de préparer et tester tes développements en toute tranquillité avant publication.
-
----
-
-## Résumé des commandes principales
-
-```bash
-# Cloner le dépôt privé
-git clone https://github.com/lucrousseau21/portfolio-private.git
-
-# Ajouter le dépôt public comme remote
-git remote add public https://github.com/lucrousseau21/portfolio-public.git
-
-# Mettre à jour le privé avec le public
-git fetch public
-git merge public/main
-
-# Publier du privé vers le public
-git push public main
-```
-
----
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
