@@ -30,9 +30,7 @@ export const Acceuil = () => {
         </p> */}
         <p>
           Futur développeur web. <br />
-          Actuellement étudiant en troisième année à l&apos;
-          <Code className="inline-flex items-center gap-1">IUT de Lens</Code> en
-          Métiers du Multimédia et Internet parcours Web.
+          En première année de <Code className="inline-flex items-center gap-1">MBA Développeur Full-Stack à MyDigitalSchool</Code> et actuellement en alternance chez Efficience IT.
         </p>
       </div>
       <div className="flex-[1]">

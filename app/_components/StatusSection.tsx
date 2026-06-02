@@ -86,6 +86,13 @@ export const Status = () => {
 const FORMATION: FormationProps[] = [
   {
     image: "images/logo_iut_lens.png",
+    title: "MyDigitalSchool Lille",
+    role: "MBA Développeur Full-Stack",
+    date: "2025 - 2027",
+    url: "https://www.mydigitalschool.com/ecole-web-lille",
+  },
+  {
+    image: "images/logo_iut_lens.png",
     title: "IUT de Lens",
     role: "BUT MMI Parcours Web - Métiers du Multimedia et Internet",
     date: "2022 - 2025",
@@ -101,6 +108,14 @@ const FORMATION: FormationProps[] = [
 ];
 
 const WORK: WorkProps[] = [
+  {
+    image: "images/logo_efficienceit.jpg",
+    title: "Efficience IT",
+    role: "",
+    date: "2026",
+    url: "https://www.itefficience.com",
+    alternance: true,
+  },
   {
     image: "images/logo_efficienceit.jpg",
     title: "Efficience IT",
