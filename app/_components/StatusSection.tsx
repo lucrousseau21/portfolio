@@ -85,7 +85,8 @@ export const Status = () => {
 
 const FORMATION: FormationProps[] = [
   {
-    image: "images/logo_mydigitalschool.svg",
+    image:
+      "https://github.com/user-attachments/assets/76563150-94b1-40c1-bfa1-9b605dead73a",
     title: "MyDigitalSchool Lille",
     role: "MBA Développeur Full-Stack",
     date: "2025 - 2027",
