@@ -13,7 +13,7 @@ export const Header = () => {
             <Section className="flex items-baseline">
                 {/* <h1 className="text-lg font-bold text-primary"> */}
                 <h1 className="font-fredoka font-light tracking-tight text-xl">
-                    <a href="/"><b className="font-medium">luc</b>rousseau</a>
+                    <Link href="/"><b className="font-medium">luc</b>rousseau</Link>
                 </h1>
                 {/* <LucRousseauLogo size={250} /> */}
                 <div className="flex-1"/>
