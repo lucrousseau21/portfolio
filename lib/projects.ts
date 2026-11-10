@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
     shortDescription: "Projet immersif d'exposition fictive avec animations interactives fluides.",
     description: [
       "Ce projet de groupe institutionnel a permis d’apprendre comment fonctionnait l’animation des sites internet à l’aide d’outils comme GSAP ou ScrollTrigger mais nous a aussi initié au SCSS.",
-      "Le but était de proposer un site interactif et engageant pour une exposition fictive, en soignant le dynamisme et les transitions visuelles."
+      "Le but était de proposer un site interactif pour une exposition fictive."
     ],
     category: "Ecole",
     subcategory: "Front",
