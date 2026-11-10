@@ -1,18 +1,14 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Header } from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
 import { Section } from "@/app/_components/modules/Section";
 import { Spacing } from "@/app/_components/modules/Spacing";
-import { Code } from "@/app/_components/modules/Code";
+import { ProjectCard } from "@/app/_components/modules/ProjectCard";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { GithubIcon } from "@/app/_components/icons/GithubIcon";
 import { cn } from "@/lib/utils";
 import {
   ProjectCategory,
@@ -22,63 +18,12 @@ import {
   SUBCATEGORIES,
 } from "@/lib/projects";
 import {
-  ArrowUpRight,
   RotateCcw,
-  Sparkles,
   SearchX,
   X,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-
-// Liste des mots-clés techniques à mettre en valeur avec <Code>
-const TECH_KEYWORDS = [
-  "WordPress",
-  "Wordpress",
-  "WooCommerce",
-  "Divi",
-  "GSAP",
-  "ScrollTrigger",
-  "SCSS",
-  "HTML5",
-  "CSS",
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "Prisma",
-  "Stripe",
-  "Laravel",
-  "Symfony",
-  "PostgreSQL",
-  "Docker",
-  "Redis",
-  "Swagger",
-  "MySQL",
-  "Doctrine ORM",
-  "REST API",
-  "PHP",
-  "JWT",
-  "RBAC",
-];
-
-// Helper pour formater automatiquement le texte avec les tags <Code>
-function FormattedParagraph({ text }: { text: string }) {
-  const escaped = TECH_KEYWORDS.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-  const regex = new RegExp(`(${escaped.join("|")})`, "g");
-  const parts = text.split(regex);
-
-  return (
-    <p className="text-sm text-muted-foreground leading-relaxed">
-      {parts.map((part, index) => {
-        if (TECH_KEYWORDS.includes(part)) {
-          return <Code key={index}>{part}</Code>;
-        }
-        return <span key={index}>{part}</span>;
-      })}
-    </p>
-  );
-}
 
 export function WorksClient() {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory | null>(null);
@@ -175,19 +120,6 @@ export function WorksClient() {
   const handleDeselectSecond =
     firstSelected === "category" ? handleDeselectSubcategory : handleDeselectCategory;
 
-  const getCategoryBadgeClass = (category: ProjectCategory) => {
-    switch (category) {
-      case "Ecole":
-        return "border-blue-500/40 text-blue-600 dark:text-blue-400 bg-blue-500/10";
-      case "Pro":
-        return "border-emerald-500/40 text-emerald-600 dark:text-emerald-400 bg-emerald-500/10";
-      case "Perso":
-        return "border-purple-500/40 text-purple-600 dark:text-purple-400 bg-purple-500/10";
-      default:
-        return "";
-    }
-  };
-
   return (
     <main className="min-h-screen flex flex-col">
       <Header />
@@ -210,7 +142,7 @@ export function WorksClient() {
 
       <Spacing size="sm" />
 
-      {/* Barre de Filtres style Spotify adaptée à la DA du site (sans vert) */}
+      {/* Barre de Filtres style Spotify adaptée à la DA du site */}
       <Section className="w-full">
         <div className="relative w-full flex items-center group/slider">
           {/* Bouton défilement gauche (desktop) */}
@@ -377,127 +309,12 @@ export function WorksClient() {
 
       <Spacing size="sm" />
 
-      {/* Liste des projets */}
+      {/* Liste des projets déléguée au composant modulaire ProjectCard */}
       <Section className="w-full flex flex-col gap-6">
         {filteredProjects.length > 0 ? (
-          filteredProjects.map((project, index) => {
-            const isReversed = index % 2 === 1;
-
-            return (
-              <Card
-                key={project.id}
-                className="p-4 sm:p-6 rounded-3xl bg-card border border-border shadow-sm hover:border-primary/25 transition-all overflow-hidden"
-              >
-                <div
-                  className={cn(
-                    "flex flex-col lg:flex-row gap-6 items-stretch",
-                    isReversed && "lg:flex-row-reverse"
-                  )}
-                >
-                  {/* Visuel / Image du projet */}
-                  <div className="w-full lg:w-5/12 h-64 sm:h-72 lg:h-72 min-h-[240px] rounded-2xl overflow-hidden relative border border-border/60 bg-accent/10 group p-2 flex items-center justify-center">
-                    <Image
-                      src={project.image}
-                      alt={project.imageAlt}
-                      fill
-                      className="object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 450px"
-                    />
-
-                    {project.isTemplate && (
-                      <Badge
-                        variant="secondary"
-                        className="absolute top-4 left-4 bg-background/85 backdrop-blur-md border border-border/70 text-xs shadow-sm flex items-center gap-1"
-                      >
-                        <Sparkles className="size-3 text-amber-500" />
-                        Template
-                      </Badge>
-                    )}
-                  </div>
-
-                  {/* Contenu textuel et détails */}
-                  <Card className="p-4 sm:p-5 w-full lg:w-7/12 bg-accent/10 hover:bg-accent/20 transition-colors rounded-2xl border border-border/50 flex flex-col justify-between gap-4">
-                    <div className="flex flex-col gap-3">
-                      {/* Ligne des badges (Catégorie, Sous-catégorie, Date) */}
-                      <div className="flex flex-wrap items-center gap-2">
-                        <Badge
-                          variant="outline"
-                          className={cn("text-xs font-medium", getCategoryBadgeClass(project.category))}
-                        >
-                          {project.category}
-                        </Badge>
-
-                        <Badge variant="outline" className="text-xs font-mono">
-                          {project.subcategory}
-                        </Badge>
-
-                        <span className="text-xs text-muted-foreground ml-auto font-mono">
-                          {project.date}
-                        </span>
-                      </div>
-
-                      {/* Titre */}
-                      <h2 className="text-xl sm:text-2xl font-semibold tracking-tight font-fredoka text-foreground">
-                        {project.title}
-                      </h2>
-
-                      {/* Paragraphes de description */}
-                      <div className="flex flex-col gap-2">
-                        {project.description.map((paragraph, pIdx) => (
-                          <FormattedParagraph key={pIdx} text={paragraph} />
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Technologies et Liens */}
-                    <div className="flex flex-col gap-3 pt-2 border-t border-border/40">
-                      <div className="flex flex-wrap items-center gap-1.5">
-                        <span className="text-xs text-muted-foreground mr-1">Stack :</span>
-                        {project.technologies.map((tech) => (
-                          <Code key={tech} className="text-xs">
-                            {tech}
-                          </Code>
-                        ))}
-                      </div>
-
-                      {/* Liens d'action */}
-                      <div className="flex flex-wrap items-center gap-2 pt-1">
-                        {project.url && (
-                          <Link
-                            href={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={cn(
-                              buttonVariants({ variant: "outline", size: "sm" }),
-                              "rounded-xl text-xs gap-1.5"
-                            )}
-                          >
-                            <span>Visiter le site</span>
-                            <ArrowUpRight className="size-3.5" />
-                          </Link>
-                        )}
-
-                        {project.githubUrl && (
-                          <Link
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={cn(
-                              buttonVariants({ variant: "outline", size: "sm" }),
-                              "rounded-xl text-xs gap-1.5"
-                            )}
-                          >
-                            <GithubIcon size={14} className="text-foreground" />
-                            <span>Code source</span>
-                          </Link>
-                        )}
-                      </div>
-                    </div>
-                  </Card>
-                </div>
-              </Card>
-            );
-          })
+          filteredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))
         ) : (
           /* État vide si aucun projet ne correspond aux filtres */
           <Card className="p-8 sm:p-12 text-center rounded-3xl bg-card border border-border flex flex-col items-center justify-center gap-4">

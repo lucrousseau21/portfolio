@@ -17,12 +17,6 @@ export const Header = () => {
                 </h1>
                 <nav className="ml-6 flex items-center gap-1 sm:gap-2">
                     <Link
-                        href="/"
-                        className="px-2.5 py-1 rounded-full text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-accent/20 transition-colors"
-                    >
-                        Accueil
-                    </Link>
-                    <Link
                         href="/works"
                         className="px-2.5 py-1 rounded-full text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-accent/20 transition-colors"
                     >
