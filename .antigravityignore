@@ -1,0 +1,69 @@
+# ==========================================
+# Antigravity Ignore (.antigravityignore)
+# ==========================================
+
+# Dépendances
+node_modules/
+.pnp/
+.pnp.js
+
+# Contrôle de version
+.git/
+
+# Dossiers de build et compilation
+.next/
+dist/
+out/
+build/
+.vercel/
+*.tsbuildinfo
+
+# Fichiers médias volumineux (images, vidéos, audio, 3D)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.avif
+*.ico
+*.bmp
+*.tiff
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.avi
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.glb
+*.gltf
+*.obj
+*.fbx
+
+# Polices d'écriture
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.eot
+
+# Dossiers d'assets publics lourds
+public/images/
+
+# Archives et documents volumineux
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.pdf
+
+# Logs et fichiers système temporaires
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db

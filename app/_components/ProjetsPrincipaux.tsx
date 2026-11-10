@@ -3,16 +3,27 @@ import { Section } from "./modules/Section";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "./modules/Code";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 export default function ProjetsPrincipaux() {
   return (
     <Section className="flex w-full items-start gap-4">
       <Card className="p-4 rounded-3xl w-full h-full flex flex-col">
-        <div className="ps-4 pb-4">
-          <Badge variant={"outline"}>Main Projects</Badge>
-          <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
-            Mes principaux projets
-          </h2>
+        <div className="ps-4 pb-4 flex items-center justify-between">
+          <div>
+            <Badge variant={"outline"}>Main Projects</Badge>
+            <h2 className="pb-2 text-xl font-semibold tracking-tight first:mt-0">
+              Mes principaux projets
+            </h2>
+          </div>
+          <Link
+            href="/works"
+            className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 font-medium pe-2 hover:underline"
+          >
+            <span>Voir tous les projets</span>
+            <ArrowUpRight className="size-4" />
+          </Link>
         </div>
         <div className="flex flex-col h-full w-full gap-4">
           <div className="flex flex-1 justify-center items-center max-md:flex-col gap-4 h-80">

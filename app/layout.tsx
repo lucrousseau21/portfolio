@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
@@ -17,18 +17,10 @@ const fredoka = Fredoka({
   variable: "--font-fredoka",
 });
 
-// const poppins = Poppins({ subsets = ["latin"] });
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Luc Rousseau - Portfolio",
@@ -45,9 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body
         className={cn(
           GeistSans.variable,
